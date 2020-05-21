@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HomePage</title>
+    <title>Cat Food Category</title>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body onload="invoice()">
-
-<!--header-->
 <div id = "headingBar">
-<!--Cart menu-->
+
     <div id ="cartIcon">
         <img src="images/icons/shoppingCartIcon.png" id = 'rotateImg'/>
 
@@ -33,10 +31,22 @@
 
 </div>
 
+<div id = "catDivContainer">
+    <div id = 'catDiv'>
+        <ul>
+            <li>
 
-<img src="images/headingImage.jpg" id ="headingImg"/>
+                <img src="images/products/catFood.png"/>
+                <p>Hill's Science Diet Adult Dry Cat Food</p>
+                Qty: <input type = number id = 'catFood1Qty' class = qty>
+                <button class = 'addCart' id = 'addCatFood1' onclick="addToCart(this)">Add to cart</button>
 
-<!--all alligned categories-->
+            </li>
+
+        </ul>
+    </div>
+</div>
+
 <div id = "categories">
     <ul>
         <li><a href="dogFood.html"><img src="images/categories/dog.png"/></a></li>
@@ -47,16 +57,10 @@
         <li><a href="reptileFood.html"><img src="images/categories/reptile.png"/></a></li>
     </ul>
 </div>
-<!--simple advertisements-->
-<div id="promo">
-    <ul>
-        <li><a><img src="images/promos/promo1.png"/></a></li>
-        <li><a><img src="images/promos/promo3 .png"/></a></li>
-        <li><a><img src="images/promos/promo2.png"/></a></li>
 
-    </ul>
-</div>
-<!--Footer-->
+
+
+
 <footer id="bottom">
     <div id = contactUS>About Us</div>
     <div id = terms>Policy</div>
